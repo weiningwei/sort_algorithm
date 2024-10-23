@@ -73,4 +73,41 @@ void sort_select(T arr[], int length, bool flag = true)
     }
 }
 
+// 插入排序
+template <typename T>
+void sort_insert(T arr[], int length, bool flag = true)
+{
+    for (int i = 1; i < length; ++i)
+    {
+        int base = arr[i];
+        int j = i - 1;
+        if (flag)
+        {
+            while (j >= 0 && arr[j] > base)
+            {
+                arr[j + 1] = arr[j];
+                --j;
+            }
+            arr[j + 1] = base;
+        }
+        else
+        {
+            while (j >= 0 && base > arr[j] )
+            {
+                arr[j + 1] = arr[j];
+                --j;
+            }
+            arr[j + 1] = base;
+        }
+    }
+}
+
+// todo
+// 快速排序
+template <typename T>
+void sort_quick(T arr[], int length, bool flag = true)
+{
+
+}
+
 #endif
