@@ -102,10 +102,16 @@ void sort_insert(T arr[], int length, bool flag = true)
     }
 }
 
-// todo
-// 快速排序
+// todo 快速排序
 template <typename T>
 void sort_quick(T arr[], int length, bool flag = true)
+{
+
+}
+
+// todo 归并排序
+template <typename T>
+void sort_merge(T arr[], int length, bool flag = true)
 {
 
 }

@@ -60,7 +60,6 @@ void test_sort_quick()
 
 int main()
 {
-    // todo
     // test_sort_bubble();
     // test_sort_select();
     // test_sort_insert();
